@@ -6,7 +6,6 @@
 % current velocity (in m/s), throttle setting (0 <= u <= 1), gear (1-5),
 % road slope (default 0) and car mass (default 1000 kg).
 
-% RMM, 2 Jul 06
 
 function dv = cruisedyn(v, u, gear, theta, m)
 
