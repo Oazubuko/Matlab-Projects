@@ -1,0 +1,12 @@
+function pendulum
+g = 9.8
+w0 = 0
+
+th0 = .05
+A = th0 - (w0 - th0)/(sqrt(-g) - 1)
+B = (w0 - th0)/(sqrt(-g) - 1)
+t = 0:1000:1;
+th = (A+B)*(cos(sqrt(g)*t) + sqrt(-1)*sin(sqrt(g)*t))
+plot(th)
+
+end
